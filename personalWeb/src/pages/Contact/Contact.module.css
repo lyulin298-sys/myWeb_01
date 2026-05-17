@@ -1,5 +1,61 @@
 .page {
+  padding-top: var(--space-lg);
+}
+
+.title {
+  font-family: var(--font-pixel);
+  font-size: 16px;
   color: var(--text-light);
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.socialGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+@media (max-width: 400px) {
+  .socialGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.socialCard {
+  composes: dialog-panel from '../../styles/pixel-mixins.css';
+  padding: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.socialCard:hover {
+  border-color: var(--season-primary);
+}
+
+.socialEmoji {
+  font-size: 36px;
+  flex-shrink: 0;
+}
+
+.socialInfo {
+  flex: 1;
+}
+
+.socialPlatform {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  margin-bottom: var(--space-xs);
+}
+
+.socialUrl {
   font-family: var(--font-body);
-  font-size: 20px;
+  font-size: 14px;
+  color: var(--wood-mid);
 }
