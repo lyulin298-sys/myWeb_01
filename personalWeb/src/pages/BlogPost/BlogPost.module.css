@@ -1,5 +1,59 @@
 .page {
+  padding-top: var(--space-lg);
+}
+
+.title {
+  font-family: var(--font-pixel);
+  font-size: 16px;
   color: var(--text-light);
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.content {
   font-family: var(--font-body);
   font-size: 20px;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+  font-family: var(--font-pixel);
+  font-size: 13px;
+  margin: var(--space-md) 0 var(--space-sm);
+  color: var(--wood-dark);
+}
+
+.content p {
+  margin-bottom: var(--space-md);
+}
+
+.content code {
+  font-family: var(--font-body);
+  background: rgba(0, 0, 0, 0.1);
+  padding: 2px 6px;
+  border: 1px solid var(--wood-mid);
+  font-size: 18px;
+}
+
+.content pre {
+  background: var(--wood-dark);
+  color: var(--text-light);
+  padding: var(--space-md);
+  border: var(--border-thin) solid var(--wood-light);
+  margin-bottom: var(--space-md);
+  overflow-x: auto;
+}
+
+.content pre code {
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+.backBtn {
+  margin-bottom: var(--space-md);
 }
