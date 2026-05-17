@@ -1,5 +1,23 @@
 .page {
+  padding-top: var(--space-lg);
+}
+
+.title {
+  font-family: var(--font-pixel);
+  font-size: 16px;
   color: var(--text-light);
-  font-family: var(--font-body);
-  font-size: 20px;
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.dialogPage {
+  cursor: pointer;
+}
+
+.pageCounter {
+  font-family: var(--font-pixel);
+  font-size: 8px;
+  color: var(--wood-mid);
+  margin-top: var(--space-xs);
 }
