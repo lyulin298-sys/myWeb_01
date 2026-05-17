@@ -1,0 +1,66 @@
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.pixel-border {
+  box-shadow:
+    inset -2px -2px 0 0 rgba(0, 0, 0, 0.3),
+    inset 2px 2px 0 0 rgba(255, 255, 255, 0.2);
+}
+
+.wood-panel {
+  background: linear-gradient(
+    180deg,
+    var(--wood-mid) 0%,
+    var(--wood-dark) 100%
+  );
+  border: var(--border-thick) solid var(--wood-dark);
+  box-shadow:
+    inset 0 0 0 2px var(--wood-light),
+    0 4px 0 0 rgba(0, 0, 0, 0.4);
+}
+
+.dialog-panel {
+  background: var(--panel-bg);
+  border: var(--border-thick) solid var(--panel-border);
+  box-shadow:
+    inset -2px -2px 0 0 rgba(0, 0, 0, 0.15),
+    inset 2px 2px 0 0 rgba(255, 255, 255, 0.4),
+    0 4px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.game-btn {
+  display: inline-block;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  padding: var(--space-sm) var(--space-md);
+  border: var(--border-thin) solid var(--btn-border);
+  box-shadow:
+    inset -2px -2px 0 0 var(--btn-shadow),
+    inset 2px 2px 0 0 rgba(255, 255, 255, 0.3),
+    0 3px 0 0 var(--btn-shadow);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.05s ease;
+}
+
+.game-btn:hover {
+  background: var(--btn-hover-bg);
+}
+
+.game-btn:active {
+  box-shadow:
+    inset 2px 2px 0 0 var(--btn-shadow),
+    inset -1px -1px 0 0 rgba(255, 255, 255, 0.1),
+    0 1px 0 0 var(--btn-shadow);
+  transform: translateY(2px);
+}
+
+.selected {
+  outline: var(--border-thin) solid var(--season-primary);
+  outline-offset: -2px;
+}

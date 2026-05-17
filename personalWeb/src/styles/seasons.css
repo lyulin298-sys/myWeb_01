@@ -1,0 +1,31 @@
+[data-season='spring'] {
+  --season-primary: #f2a0c0;
+  --season-secondary: #a8d870;
+  --season-bg: #f5e8c8;
+  --season-accent: #6b8a40;
+  --season-dark: #5a3a1a;
+}
+
+[data-season='summer'] {
+  --season-primary: #ffd040;
+  --season-secondary: #40b8e0;
+  --season-bg: #fff8e0;
+  --season-accent: #60a838;
+  --season-dark: #4a2a00;
+}
+
+[data-season='fall'] {
+  --season-primary: #e07830;
+  --season-secondary: #c84040;
+  --season-bg: #f0d8a0;
+  --season-accent: #8b5a2a;
+  --season-dark: #4a2010;
+}
+
+[data-season='winter'] {
+  --season-primary: #f0f8ff;
+  --season-secondary: #a0b8d0;
+  --season-bg: #e0e8f0;
+  --season-accent: #506880;
+  --season-dark: #2a3040;
+}

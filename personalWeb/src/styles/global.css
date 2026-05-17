@@ -1,0 +1,64 @@
+@import './variables.css';
+@import './seasons.css';
+@import './pixel-mixins.css';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text-dark);
+  background: #1a0f05;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--wood-dark);
+  border: var(--border-thin) solid var(--wood-mid);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--wood-mid);
+  border: var(--border-thin) solid var(--wood-light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--wood-light);
+}
+
+::selection {
+  background: var(--season-primary);
+  color: var(--season-dark);
+}

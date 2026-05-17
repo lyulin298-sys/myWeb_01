@@ -1,0 +1,42 @@
+:root {
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  --border-thin: 2px;
+  --border-thick: 4px;
+  --border-huge: 6px;
+
+  --wood-dark: #3a2010;
+  --wood-mid: #5a3a1a;
+  --wood-light: #8b6914;
+  --wood-highlight: #c8a878;
+
+  --panel-bg: #f5e8c8;
+  --panel-border: #8b5a2a;
+
+  --text-dark: #3a2010;
+  --text-light: #ffe8a0;
+
+  --font-pixel: 'Press Start 2P', monospace;
+  --font-body: 'VT323', monospace;
+  --font-hud: 'Press Start 2P', monospace;
+
+  --hud-bg: #2a1a0a;
+  --hud-text: #ffe8a0;
+  --gold-color: #ffe040;
+  --hp-color: #e04040;
+  --ep-color: #4080e0;
+
+  --btn-bg: #d4a054;
+  --btn-border: #8b6010;
+  --btn-shadow: #6b4010;
+  --btn-text: #3a2010;
+  --btn-hover-bg: #e0b868;
+
+  --z-hud: 100;
+  --z-hotbar: 100;
+  --z-dialog: 10;
+}
