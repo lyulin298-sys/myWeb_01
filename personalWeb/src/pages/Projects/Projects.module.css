@@ -1,5 +1,40 @@
 .page {
+  padding-top: var(--space-lg);
+}
+
+.title {
+  font-family: var(--font-pixel);
+  font-size: 16px;
   color: var(--text-light);
-  font-family: var(--font-body);
-  font-size: 20px;
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-sm);
+}
+
+.techTag {
+  font-family: var(--font-pixel);
+  font-size: 7px;
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--season-primary);
+  padding: 2px 6px;
+  border: 1px solid var(--wood-mid);
 }

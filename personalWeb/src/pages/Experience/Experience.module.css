@@ -1,5 +1,80 @@
 .page {
+  padding-top: var(--space-lg);
+}
+
+.title {
+  font-family: var(--font-pixel);
+  font-size: 16px;
   color: var(--text-light);
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.timeline {
+  position: relative;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--wood-mid);
+  box-shadow: inset -1px -1px 0 0 rgba(0,0,0,0.3), inset 1px 1px 0 0 rgba(255,255,255,0.2);
+}
+
+.node {
+  position: relative;
+  margin-bottom: var(--space-lg);
+  padding-left: var(--space-md);
+}
+
+.node::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  background: var(--season-primary);
+  border: var(--border-thin) solid var(--wood-dark);
+  box-shadow: inset -1px -1px 0 0 rgba(0,0,0,0.3);
+}
+
+.nodeHeader {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  color: var(--text-light);
+  margin-bottom: var(--space-xs);
+}
+
+.nodeTitle {
+  color: var(--season-primary);
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  margin-bottom: var(--space-xs);
+}
+
+.nodePeriod {
   font-family: var(--font-body);
-  font-size: 20px;
+  font-size: 14px;
+  color: var(--wood-highlight);
+}
+
+.nodeDesc {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: #c8b898;
+  line-height: 1.5;
+}
+
+.depth {
+  font-family: var(--font-pixel);
+  font-size: 8px;
+  color: var(--wood-mid);
+  margin-top: var(--space-xs);
 }
