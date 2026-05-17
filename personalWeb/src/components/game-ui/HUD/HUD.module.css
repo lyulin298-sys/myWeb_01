@@ -1,0 +1,15 @@
+.hud {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  z-index: 100;
+  background: var(--hud-bg);
+  color: var(--hud-text);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-family: var(--font-pixel);
+  font-size: 11px;
+}

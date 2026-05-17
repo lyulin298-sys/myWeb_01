@@ -1,0 +1,39 @@
+.frame {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #1a0f05 0%, #2a1a0a 100%);
+  position: relative;
+}
+
+.woodBorder {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.woodBorder::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border: 6px solid var(--wood-mid);
+  box-shadow:
+    inset 0 0 0 2px var(--wood-light),
+    0 0 0 4px var(--wood-dark);
+  pointer-events: none;
+}
+
+.content {
+  flex: 1;
+  padding: 40px var(--space-lg) 80px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.contentWithHud {
+  padding-top: 60px;
+}

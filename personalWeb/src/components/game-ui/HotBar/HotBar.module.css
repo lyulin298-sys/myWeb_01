@@ -1,0 +1,15 @@
+.hotbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  z-index: 100;
+  background: var(--hud-bg);
+  color: var(--hud-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-pixel);
+  font-size: 11px;
+}
