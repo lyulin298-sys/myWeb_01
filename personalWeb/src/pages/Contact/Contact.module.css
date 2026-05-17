@@ -1,0 +1,5 @@
+.page {
+  color: var(--text-light);
+  font-family: var(--font-body);
+  font-size: 20px;
+}
