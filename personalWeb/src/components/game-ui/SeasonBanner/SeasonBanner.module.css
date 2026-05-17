@@ -1,0 +1,23 @@
+.banner {
+  text-align: center;
+  padding: var(--space-md);
+  margin-bottom: var(--space-lg);
+  font-family: var(--font-pixel);
+  font-size: 14px;
+  color: var(--season-dark);
+  background: linear-gradient(
+    180deg,
+    var(--season-primary) 0%,
+    var(--season-bg) 100%
+  );
+  border: var(--border-thick) solid var(--season-dark);
+  box-shadow:
+    inset -2px -2px 0 0 rgba(0, 0, 0, 0.2),
+    inset 2px 2px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.emoji {
+  font-size: 24px;
+  display: block;
+  margin-bottom: var(--space-xs);
+}

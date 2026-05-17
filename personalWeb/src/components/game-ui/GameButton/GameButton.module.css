@@ -1,0 +1,8 @@
+.button {
+  composes: game-btn from '../../../styles/pixel-mixins.css';
+}
+
+.small {
+  font-size: 10px;
+  padding: var(--space-xs) var(--space-sm);
+}
